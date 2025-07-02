@@ -1,0 +1,26 @@
+{
+    "manifest_version": 1,
+    "name": "NCMRemovePlayAI",
+    "version": "0.0.1",
+    "author": "Repeerc",
+    "description": "网易云音乐移除心动模式",
+    "betterncm_version": ">=0.2.5",
+    "preview": "preview.png",
+    "ncm3-compatible": true, 
+    "injects": {
+        "Main": [
+            {
+                "file": "main.js"
+            }
+        ]
+    },
+    "hijacks": {
+        ">= 3.1.12": {
+            "orpheus://orpheus/pub/hybrid/app~subApp.chunk.8dd72b8.js": {
+                "type": "replace",
+                "from": "case c.g.PlayAi:e=Object(p.jsx)(o.tb,{color:l.N.colorBlack2,title:\"\\u5fc3\\u52a8\\u6a21\\u5f0f\",size:24,_nk:\"\".concat(\"/JUE\",\"41\")});break;",
+                "to": "case c.g.PlayAi:c.g.PlayAi=\"xxxx\";"
+            }
+        }
+    }
+}

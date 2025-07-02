@@ -1,0 +1,1 @@
+(()=>{function n(){return h("div",null,h("h1",null,"NCM\u79FB\u9664\u5FC3\u52A8\u6A21\u5F0F\u63D2\u4EF6"))}plugin.onConfig(()=>{let e=document.createElement("div");return ReactDOM.render(n(),e),e});})();
